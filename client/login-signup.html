@@ -45,17 +45,13 @@ button {
 </style> 
 </head>  
 <body>  
-    <center> <h1> Student Login Form </h1> </center> 
-    <form>
+    <center> <h1>Student Login Form </h1> </center> 
+    <form action="/welcome" method="POST" >
         <div class="container"> 
-            <label>Username : </label> 
-            <input type="text" placeholder="Enter Username" name="username" required>
-            <label>Password : </label> 
-            <input type="password" placeholder="Enter Password" name="password" required>
+            <label>Login using mobile number : </label> 
+            <input type="number" placeholder="Enter mobile number" name="mobile" required for="fname" id="num">
             <button type="submit">Login</button> 
-            <input type="checkbox" checked="checked"> Remember me 
-            <button type="button" class="cancelbtn"> Cancel</button> 
-            Forgot <a href="#"> password? </a> 
+             <a href="signin" value="Submit"> sign in </a> 
         </div> 
     </form>   
 </body>   
